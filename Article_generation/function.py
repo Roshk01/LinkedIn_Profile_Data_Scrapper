@@ -1,6 +1,10 @@
 import pandas as pd
 import google.generativeai as genai
 import os
+from typing import List, Dict, Union
+import time
+import requests
+
 
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")  # supply via Streamlit Secrets -> env in app
