@@ -3,3 +3,5 @@ apify-client
 pandas
 requests
 python-dotenv
+tdqm
+
