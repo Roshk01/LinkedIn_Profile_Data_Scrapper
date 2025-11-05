@@ -4,8 +4,8 @@ import os
 # import your scraping function
 from function import scrape_linkedin_profiles
 
-os.environ["APIFY_TOKEN"] = st.secrets["APIFY_TOKEN"]
-os.environ["ACTOR_ID"] = st.secrets["ACTOR_ID"]
+APIFY_TOKEN = st.secrets["APIFY_TOKEN"]
+ACTOR_ID = st.secrets["ACTOR_ID"]
 
 st.set_page_config(page_title="LinkedIn Scraper", page_icon="🔎", layout="wide")
 
@@ -51,4 +51,5 @@ if run_button:
             )
     except Exception as e:
         st.error(f"Error: {e}")
+
 
