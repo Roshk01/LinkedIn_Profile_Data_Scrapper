@@ -31,7 +31,7 @@ if run_button:
     # call your function
     try:
         st.info("Running scraper...")
-        items = scrape_linkedin_profiles(urls)   # <-- your function
+        items = scrape_linkedin_profiles(urls,APIFY_TOKEN,ACTOR_ID)   # <-- your function
 
         df = pd.DataFrame(items)
 
@@ -51,5 +51,6 @@ if run_button:
             )
     except Exception as e:
         st.error(f"Error: {e}")
+
 
 
